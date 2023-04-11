@@ -69,8 +69,9 @@
         // 콜백함수는 item은 input을 차례대로 받아온다
         item.addEventListener('input', () => {
           //                   'input'에 변화가 있을때 이벤트를 실행하라
-          const name = `--main-${item.dataset.id}`; // 데이터 값을 가져오려면 dataset
+          const name = `--main-${item.dataset.id}`; // 데이터 값을 가져오려면 dataset, id는 data-id
           root.style.setProperty(name, item.value); // 변화하고싶은 속성, 변화 값
+          //         setProperty :CSS 스타일 선언 개체의 속성에 대한 새 값을 설정
         });
       });
     </script>
